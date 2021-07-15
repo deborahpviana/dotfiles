@@ -9,21 +9,14 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         build-essential \
         zsh \
         tmux \
-        clang \
-        clang-format \
-        lldb \
         git \
         curl \
         software-properties-common \
         apt-transport-https \
         ssh \
         exuberant-ctags \
-        wget
-
-    # Install libraries
-    sudo apt-get -y install \
-        libasound2-dev \
-        libopus-dev
+        wget \
+        terminator
 
 else
     brew install tmux clang clang-format
